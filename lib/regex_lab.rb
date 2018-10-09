@@ -17,5 +17,5 @@ end
 def valid_phone_number?(phone)
   valid_numbers = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
 
-  phone.scan(/\W?\d{3}\W?\d{3}\W?\d{4}/).size > 0
+  phone.scan(/.?\d{3}.?\d{3}.?\d{4}/).size > 0
 end
